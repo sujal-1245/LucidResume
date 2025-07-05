@@ -1,5 +1,4 @@
 import React from 'react';
-import Cta from './cta';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
