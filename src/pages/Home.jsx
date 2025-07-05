@@ -3,7 +3,7 @@ import Features from "../components/Features";
 import TemplatePreviewSection from "../components/TemplatePreviewSection";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Cta from "../components/cta";
+import Cta from "../components/Cta";
 import CompanyMarquee from "../components/CompanyMarquee";
 
 const Home = () => {
