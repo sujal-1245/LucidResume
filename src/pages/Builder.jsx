@@ -133,7 +133,7 @@ const Builder = () => {
 
           {/* Experience Section */}
           <div className="mt-6 border-t pt-4 border-lion-500/20 dark:border-peach-100/10">
-            <h3 className="text-lg font-bold text-lion-700 dark:text-peach-400 mb-2">Experience</h3>
+            <h3 className="text-lg font-bold  text-peach-400 mb-2">Experience</h3>
             {form.experience.map((exp, index) => (
               <div key={index} className="bg-peach-900 p-4 mb-4 rounded border border-peach-200/20 text-white">
                 <input
