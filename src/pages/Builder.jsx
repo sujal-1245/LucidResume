@@ -135,34 +135,34 @@ const Builder = () => {
           <div className="mt-6 border-t pt-4 border-lion-500/20 dark:border-peach-100/10">
             <h3 className="text-lg font-bold text-lion-700 dark:text-peach-400 mb-2">Experience</h3>
             {form.experience.map((exp, index) => (
-              <div key={index} className="bg-[#1a1d25] p-4 mb-4 rounded border border-peach-200/20">
+              <div key={index} className="bg-peach-900 p-4 mb-4 rounded border border-peach-200/20 text-white">
                 <input
                   name="title"
                   placeholder="Job Title"
                   value={exp.title}
                   onChange={(e) => handleChange(e, index)}
-                  className="w-full mb-2 p-2 rounded bg-[#0f1117] border border-peach-300/30 text-sm"
+                  className="w-full mb-2 p-2 rounded bg-[#59503a] border border-peach-300/30 text-sm"
                 />
                 <input
                   name="company"
                   placeholder="Company"
                   value={exp.company}
                   onChange={(e) => handleChange(e, index)}
-                  className="w-full mb-2 p-2 rounded bg-[#0f1117] border border-peach-300/30 text-sm"
+                  className="w-full mb-2 p-2 rounded bg-[#59503a] border border-peach-300/30 text-sm"
                 />
                 <input
                   name="duration"
                   placeholder="Duration"
                   value={exp.duration}
                   onChange={(e) => handleChange(e, index)}
-                  className="w-full mb-2 p-2 rounded bg-[#0f1117] border border-peach-300/30 text-sm"
+                  className="w-full mb-2 p-2 rounded bg-[#59503a] border border-peach-300/30 text-sm"
                 />
                 <textarea
                   name="description"
                   placeholder="Description"
                   value={exp.description}
                   onChange={(e) => handleChange(e, index)}
-                  className="w-full p-2 rounded bg-[#0f1117] border border-peach-300/30 text-sm"
+                  className="w-full p-2 rounded bg-[#59503a] border border-peach-300/30 text-sm"
                   rows="3"
                 />
                 <button
