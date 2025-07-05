@@ -27,17 +27,12 @@ const TemplatePreviewSection = () => {
       case 'elegant':
         return <ElegantTemplate />;
       default:
-        return <ClassicTemplate />;
+        return <ClassicTemplate />; // fallback to classic
     }
   };
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="w-full min-h-screen bg-peach-900 dark:bg-bistre-600 text-bistre-600 dark:text-white relative overflow-auto"
-    >
+    <section className="w-full min-h-screen bg-peach-900 dark:bg-bistre-600 text-bistre-600 dark:text-white relative overflow-auto">
       {/* 🔮 Background Glow */}
       <div className="absolute top-[-100px] left-[-100px] w-[500px] h-[500px] bg-lion-600 opacity-20 dark:opacity-40 blur-[120px] rounded-full -z-10" />
       <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-peach-300 opacity-20 dark:opacity-30 blur-[100px] rounded-full -z-10" />
@@ -49,7 +44,7 @@ const TemplatePreviewSection = () => {
         className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-10 flex flex-col items-center justify-start min-h-screen"
       >
         {/* Heading */}
-        <h2 className="text-xl mt-10 overflow-hidden sm:text-2xl md:text-3xl font-bold text-center text-peach-400 bg-clip-text mb-8">
+        <h2 className="text-xl mt-10 sm:text-2xl md:text-3xl font-bold text-center text-peach-400 bg-clip-text mb-8">
           Select Template
         </h2>
 
@@ -71,27 +66,25 @@ const TemplatePreviewSection = () => {
                 {template.charAt(0).toUpperCase() + template.slice(1)}
               </button>
             ))}
-                              {/* CTA Button */}
-        <div className="mt-10">
-          <button
-            onClick={handleStartBuilding}
-            className="px-6 py-3 text-sm font-semibold rounded-full bg-falu_red-600 hover:bg-falu_red-400 dark:bg-peach-300 dark:hover:bg-peach-200 text-white transition-all shadow-lg"
-          >
-            Use This Template
-          </button>
-        </div>
-          </div>
 
+            {/* CTA Button */}
+            <div className="mt-10">
+              <button
+                onClick={handleStartBuilding}
+                className="px-6 py-3 text-sm font-semibold rounded-full bg-falu_red-600 hover:bg-falu_red-400 dark:bg-peach-300 dark:hover:bg-peach-200 text-white transition-all shadow-lg"
+              >
+                Use This Template
+              </button>
+            </div>
+          </div>
 
           {/* Preview */}
           <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[65%] lg:max-w-[50%] xl:max-w-[40%] aspect-[3/4] bg-white rounded-lg overflow-hidden shadow-xl scale-[0.8] sm:scale-90 md:scale-100 transition-transform origin-top">
             {renderTemplate()}
           </div>
         </div>
-
-
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 
