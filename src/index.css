@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.bg-glass {
+  @apply bg-white/5 backdrop-blur-lg;
+}
+.shadow-glow {
+  @apply shadow-[0_0_30px_#67e8f9];
+}
