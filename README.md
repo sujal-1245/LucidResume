@@ -1,9 +1,3 @@
-Here’s a polished, badge-rich `README.md` for your **LucidResume** project — styled just like your portfolio, ToDoVoodoo, and blog READMEs:
-
----
-
-<!-- Banner -->
-
 <h1 align="center">📄 LucidResume — Sleek Resume Builder</h1>
 <p align="center">
   A responsive resume builder web app with dynamic preview and one-click PDF export. Build your professional resume in minutes.
@@ -122,12 +116,3 @@ If this helped you craft your resume, or you liked how it works — give it a �
 ## 📜 License
 
 This project is open-source under the [MIT License](LICENSE).
-
----
-
-Let me know when you're ready to plug in actual screenshots, or want badges for tech stack, dark mode, or performance metrics. We could also enhance it with:
-
-* Theme selection
-* Multiple resume templates
-* Section reordering (drag & drop)
-  when you’re ready to level it up! 🚀
